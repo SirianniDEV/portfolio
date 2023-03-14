@@ -127,3 +127,31 @@
     filter: invert(1);
   }
 }
+
+/* MY STYLES */
+
+.gradientLanding{
+  display: flex;
+  align-items: flex-end;
+  width: 100vw;
+  height: 100vh;
+  background:
+  linear-gradient(115.55deg, #FFEA85 27.3%, #E291FF 53.18%, #8FB6FF 88.5%)
+    var(--c,0%)/200% no-repeat;
+  -webkit-background-clip: border-box;
+          background-clip: border-box;
+  transition: 1s;
+  z-index: -100;
+}
+
+.gradientLanding:hover {
+  --c:100%;
+}
+
+.gradientContainer {
+  padding: 10px;
+  color: #000000;
+}
+
+
+
