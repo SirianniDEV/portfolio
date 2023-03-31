@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Window from '../components/window'
+import Contact from '../components/contact'
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Window/>
+        {/* <Window/> */}
+        <Contact/>
+
       
       </main>
     </div>
