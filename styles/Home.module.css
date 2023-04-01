@@ -154,4 +154,57 @@
 }
 
 
+/* portrait test */
 
+.person {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  border-radius: 50%;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(0.6); /* Updated scale property */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container:hover {
+  transform: scale(0.66); /* Updated scale property */
+}
+.container-inner {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  transform-origin: 50%;
+}
+.circle {
+  cursor: pointer;
+  height: 456px; /* Updated height property */
+  width: 600px; /* Updated width property */
+  pointer-events: none;
+  position: absolute;
+}
+.img1 {
+  pointer-events: none;
+  position: relative;
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 412px; /* Updated height property */
+  width: 404px; /* Updated width property */
+}
+.container:hover .img1 {
+  transform: translateY(0) scale(1.2);
+}
+
+.sofia {
+   text-decoration: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: thin #000;
+   font-size:  80px !important;
+   font-family: arial, sans-serif;
+}
+.sofia:hover {
+  -webkit-text-fill-color: #000;
+}
