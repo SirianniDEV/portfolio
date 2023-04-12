@@ -17,6 +17,8 @@ export default function Home() {
             <img className={styles.heroImg} src='/headshot.png'/>
         </div>
       <main className={styles.main}>
+        <Window />
+        {/* <Contact /> */}
             {/* <div className={styles.portrait}>
               <div className={styles.containerInner}>
                 <p>Digital Designer + Developer</p>

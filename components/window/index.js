@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
+import { IoIosClose } from "react-icons/io";
+
 const WindowContainer = styled.div
 `
-    width: 400px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
+    display: flex;
+    z-index: 5;
+    position: relative;
 
 `
 const Bar = styled.div
@@ -14,33 +15,64 @@ const Bar = styled.div
     flex-direction: row;
     gap: 10px;
     width: 100%;
-    background-color: #9CB7FF;
+    background: #E1F5FF;
+    border-bottom: 4px solid #8FB6FF;
     padding: 15px;
 `
-const Square = styled.div
+const Circle1 = styled.span
 `
-    width:20px;
-    // color: white;
-
+    width: 30px;
+    height: 30px;
+    background: #8FB6FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+`
+const Circle2 = styled.span
+`
+    width: 30px;
+    height: 30px;
+    border: 3px solid #8FB6FF;
+    border-radius: 50%;
 `
 const Container = styled.div
 `
     background-color: #f5f5f5;
+    min-width: 300px;
     height: 300px;
-
+    border: 4px solid #8FB6FF;
+`
+const Shadow = styled.div
+`
+    width: 100%;
+    height: 100%;
+    top:10px;
+    left: 10px;
+    position: absolute;
+    background: #E1F5FF;
+    border: 4px solid #8FB6FF;
+    z-index: -1;
 `
 
 export default function Window(){
+
+    const iconStyle = { 
+        color: "#E1F5FF", 
+        fontSize: "5rem", 
+      };
+
 	return( 
         <WindowContainer>
-            <Bar>
-                <Square>X</Square>
-                <Square>▢</Square>
-                <Square>__</Square>
-            </Bar>
             <Container>
-                    
+            <Bar>
+                <Circle1><IoIosClose style={iconStyle}  /></Circle1>
+                <Circle2></Circle2>
+                <Circle2></Circle2>
+            </Bar>
             </Container>
+            <Shadow></Shadow>
         </WindowContainer>
 )
 }
