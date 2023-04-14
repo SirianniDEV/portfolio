@@ -1,15 +1,17 @@
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 
 const Container = styled.div
 `
     border: 3px solid #8FB6FF;
-    
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
+    margin: 50px;
 
     &:hover{
         background-color: #8FB6FF;
@@ -66,13 +68,19 @@ const ProjectImage = styled(Image)
  margin: 10px;
  margin-top: 0px;
  background: #E1F5FF;
+ object-fit: cover;
+ object-position: center;
+ height: 500px;
+
 `
 
 export default function Project({
     src="/PlacerPhoto.svg",
     txt="Project Title",
+    href="/"
 }){
     return(
+        <Link href={href}>
         <Container>
             <Bar>
                 <Title>{txt}</Title>
@@ -84,5 +92,6 @@ export default function Project({
             </Bar>
             <ProjectImage src={src} width={500} height={300}/>
         </Container>
+        </Link>
     );
 }
