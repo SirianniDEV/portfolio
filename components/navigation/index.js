@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import {BsGithub} from "react-icons/bs"
 import {BsLinkedin} from "react-icons/bs"
+import Link from "next/link"
 
 const Container = styled.nav
 `
@@ -39,17 +40,17 @@ export default function Navigation () {
         <Container>
 
             <Nav>
-                <a href="/">HOME</a>
+                <Link href="/">HOME/</Link>
 
-                <a href="/projects">PROJECTS</a>
+                <Link href="/projects">PROJECTS</Link>
 
-                <a href="/contact">CONTACT</a>
+                <Link href="/contact">CONTACT</Link>
             </Nav>
      
 
             <Socials>
-            <a href="#"><BsGithub/></a>
-            <a href="#"><BsLinkedin/></a>
+            <Link href="https://www.linkedin.com/in/sofia-sirianni-77229b18b/"  target='_blank'><BsGithub/></Link>
+            <Link href="https://github.com/SirianniDEV" target='_blank'><BsLinkedin/></Link>
             </Socials>
 
         

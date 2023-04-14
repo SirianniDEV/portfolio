@@ -118,7 +118,7 @@ export default function Contact(){
             <WindowContainer>
             <Container>
               <p>Thank you!</p>
-              <p>We'll be in touch soon.</p>
+              <p>We&apos;ll be in touch soon.</p>
               <AppButton txt='Go back home'/>
             </Container>
             </WindowContainer>

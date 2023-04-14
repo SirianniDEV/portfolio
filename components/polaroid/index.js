@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
 export const Container = styled.div
 `
@@ -48,7 +49,7 @@ export default function Polaroid({
         return(
             <Container>
                     <PolaroidContainer>
-                        <img src={src} alt={alt} width={width}/>
+                        <Image src={src} alt={alt} width={width}/>
                     </PolaroidContainer>
                 <Shadow1/>
                 <Shadow2/>
