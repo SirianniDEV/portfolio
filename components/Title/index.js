@@ -9,6 +9,7 @@ const Text = styled.h1
     text-align: center;
     padding: 10px;
     max-width: 900px;
+    margin: 0 auto;
 `
 
 export default function Title({

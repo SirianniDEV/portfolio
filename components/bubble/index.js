@@ -12,7 +12,7 @@ const BubbleStyle = styled.span
 `
     width: ${props=>props.width||"150px"};
     height: ${props=>props.height||"150px"};
-    background: #8FB6FF;
+    background: ${props=>props.color||"#8FB6FF"};
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -37,12 +37,13 @@ export default function Bubble({
     icon="<IoIosDesktop/>",
     width="150px",
     height="150px",
+    color="#8FB6FF",
     iconSize="6rem"
 }){
 
 	return( 
         <Container>
-            <BubbleStyle width={width} height={height} iconSize={iconSize}>
+            <BubbleStyle color={color} width={width} height={height} iconSize={iconSize}>
                 {icon} 
             </BubbleStyle>
             <Shadow></Shadow>

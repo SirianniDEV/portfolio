@@ -14,17 +14,19 @@ const Wrapper = styled.footer`
   color:#fff;
   font-family: Montserrat;
   font-size: 1rem;
+  margin-top: 50px;
 `;
 
 const CopyWright = styled.div`
 `
 const Icons = styled.div`
+
 `
 
 
 const IconLink = styled.a`
   margin: 0 10px;
-  font-size: 24px;
+  font-size: 30px;
   color: #E1F5FF;
 
 

@@ -27,33 +27,27 @@ export default function Home() {
         <meta content="Sofia Siriani - Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={styles.heroHeader}>
+        <Navigation/>
 
-
-          <div className={styles.heroHeader}>
-             <Navigation/>
-            <Image className={styles.heroImg} src='/portrait-blue.png' width={800} height={700}/>
-            {/* <div className={styles.portrait}>
-                <div className={styles.portraitText}>
+        <div className={styles.portrait}>
+            <div className={styles.portraitText}>
                 <p>Digital Designer + Developer</p>
                 <h1 className={styles.sofia}>SOFIA</h1>
-                </div>
-              <div className={styles.containerInner}>
-                  <img
-                    className={styles.circle}
-                    src='/SVG/portrait-bg.svg'/> 
-                  <img
-                    className={styles.img1}
-                    src='/SVG/portrait.svg' />
-              </div>
-          </div> */}
-        </div>
-      <main className={styles.main}>
+            </div>
 
-        <div className={styles.aboutContainer}>
+            <div className={styles.containerInner}>
+              <img className={styles.circle} src='/SVG/portrait-bg.png' />
+              <img className={styles.portraitImage} src='/SVG/portrait.svg' />
+            </div>
+        </div>
 
           <Title txt=" Web Developer and Digital Designer with a passion for translating ideas into reality."/>
+      </div>
 
-          <div className={styles.about}>
+      <main className={styles.main}>
+        <div className={styles.aboutContainer}>
+  
             <div className={styles.aboutText}>
               <Window txt1="I am a creative thinker and problem solver, dedicated to delivering high-quality results. With a background in digital marketing, I decided to expand my skill set by studying in BCIT's Digital Design and Web Development program to focus on graphic design and discovered a passion for web development. "
                       txt2="As I still love analyzing data for marketing and designing assets for projects, I currently am working towards a career in developing websites. My previous experiences have shaped me into a well-rounded asset to any team that can contribute in numerous ways in different areas. I am always looking for opportunities to learn and expand my skills."/>
@@ -68,16 +62,35 @@ export default function Home() {
                   <Bubble icon={<BsWordpress />}  width='70px' height='70px' iconSize='3rem'/>
                 </div>
             </div>
+            <div className={styles.aboutImg}>
               <Polaroid src='/working-at-desk.jpg' width={650} height={450}/>
-          </div>
+            </div>
+
         </div>
 
-        {/* <AppButton/> */}
+        <div className={styles.projectContainer}>
 
+          <Title txt="MY WORK"/>
+        <div className={styles.projectsRow}>
+          
+          <div className={styles.projectColumnRight}>
+            <Polaroid src='/project-photos/SGL-1.png' width={350} height={450}/> <br/> <br/>
+            <Polaroid src='/project-photos/sh-1.png' width={350} height={350}/>
+          </div>
 
-        {/* <Contact /> */}
-     
-      </main>
+          <div className={styles.projectColumnLeft}>
+            <Polaroid src='/project-photos/BM-1.png' width={450} height={550}/>
+          </div>
+
+        </div>
+        
+            <div className={styles.CTA}>
+              <AppButton txt='Check Out Projects'  handleClick={() => window.location.href = '/projects'}/>
+            </div>
+
+        </div>
+        </main>
+
       <Footer/>
     </div>
   )

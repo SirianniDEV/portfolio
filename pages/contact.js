@@ -29,25 +29,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-          <div className={styles.heroHeader}>
+      <div className={styles.heroHeader}>
              <Navigation/>
-        </div>
+      </div>
+
       <main className={styles.main}>
 
-        <div className={styles.aboutContainer}>
-
-            <Title txt="Let's Work Together!"/>
-
-          <Contact/>
-
-
-          
-        </div>
-
-       
+          <Title txt="Let's Work Together!"/>
+          <Contact/>    
      
       </main>
+
       <Footer/>
     </div>
   )

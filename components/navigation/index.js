@@ -18,6 +18,7 @@ const Container = styled.nav
     font-family: Montserrat;
     font-weight: 600;
     font-size: 1.2rem;
+    z-index: 100;
 `
 const Nav = styled.div
 `
@@ -57,52 +58,3 @@ export default function Navigation () {
         </Container>
     )
 }
-
-// import React from 'react';
-// import styled from 'styled-components';
-
-// const Nav = styled.nav`
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   background: #E1F5FF;
-//   z-index: 100;
-//   margin: 20px;
-//   border-radius: 5px:
-//   border: 4px solid #8FB6FF;
-// `;
-
-// const Container = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   padding: 10px;
-// `;
-
-// const Logo = styled.a`
-//   font-size: 24px;
-//   font-weight: bold;
-//   color: #333;
-//   text-decoration: none;
-// `;
-
-// const Navbar = () => {
-//   return (
-//     <Nav>
-//       <Container>
-//         <Logo href="#">Logo</Logo>
-//             <a href="#">ABOUT</a>
-
-//             <a href="#">PROJECTS</a>
-
-//             <a href="#">CONTACT</a>
-
-//       </Container>
-//     </Nav>
-//   );
-// };
-
-// export default Navbar;
