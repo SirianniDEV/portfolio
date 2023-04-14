@@ -31,7 +31,7 @@ export default function Home() {
 
           <div className={styles.heroHeader}>
              <Navigation/>
-            <Image className={styles.heroImg} src='/portrait-blue.png' width={800}/>
+            <Image className={styles.heroImg} src='/portrait-blue.png' width={800} height={700}/>
             {/* <div className={styles.portrait}>
                 <div className={styles.portraitText}>
                 <p>Digital Designer + Developer</p>
@@ -69,7 +69,7 @@ export default function Home() {
                   <Bubble icon={<BsWordpress />}  width='70px' height='70px' iconSize='3rem'/>
                 </div>
             </div>
-              <Polaroid src='/working-at-desk.jpg' width='650px'/>
+              <Polaroid src='/working-at-desk.jpg' width={650} height={450}/>
           </div>
         </div>
 

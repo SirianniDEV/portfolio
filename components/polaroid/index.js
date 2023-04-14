@@ -43,13 +43,14 @@ export default function Polaroid({
     src="/PlacerPhoto.svg",
     alt="PlacerPhoto",
     width="450px",
+    height="450px",
 
 }){
     
         return(
             <Container>
                     <PolaroidContainer>
-                        <Image src={src} alt={alt} width={width}/>
+                        <Image src={src} alt={alt} width={width} height={height}/>
                     </PolaroidContainer>
                 <Shadow1/>
                 <Shadow2/>
