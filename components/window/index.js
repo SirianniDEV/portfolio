@@ -7,7 +7,7 @@ const WindowContainer = styled.div
     display: flex;
     z-index: 5;
     position: relative;
-
+    margin: 40px;
 `
 const Bar = styled.div
 `

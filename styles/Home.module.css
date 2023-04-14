@@ -25,6 +25,7 @@
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  width: 100vw;
 }
 
 .aboutText {
@@ -54,7 +55,9 @@
   flex-wrap: wrap;
   max-width: 400px;
   gap: 25px;
-  margin-top: 3rem;
+  margin: auto;
+  /* margin-top: 3rem;
+  margin-right: 0px; */
 }
 
 .gradientLanding{

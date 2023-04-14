@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const Text = styled.h1
 `
     color: #8FB6FF;
-    font-family: Montserrat;
+    font-family: 'Adorage';
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     padding: 10px;
     max-width: 900px;

@@ -36,3 +36,8 @@ a {
   font-family: 'Adorage';
   src: url('../fonts/adorage-rgxqy.otf') format('truetype');
 }
+
+@font-face {
+  font-family: 'NewYork';
+  src: url('../fonts/NewYork.otf') format('truetype');
+}

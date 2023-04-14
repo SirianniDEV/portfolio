@@ -40,7 +40,7 @@ export default function Navigation () {
         <Container>
 
             <Nav>
-                <Link href="/">HOME/</Link>
+                <Link href="/">HOME</Link>
 
                 <Link href="/projects">PROJECTS</Link>
 

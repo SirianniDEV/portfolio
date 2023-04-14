@@ -90,13 +90,18 @@ const Button = styled.button`
 `;
 export default function AppButton({
     txt='Click Me',
+    handleClick,
 }) 
 {
+  function onClickHandler() {
+    console.log('button clicked!')
+    handleClick && handleClick()
+}
     return (
  
 
         <BodyContainer>
-            <Button className="btn--stripe btn--large btn--radius">{txt}</Button>
+            <Button className="btn--stripe btn--large btn--radius" onClick={handleClick}>{txt}</Button>
         </BodyContainer>
     )
 }
