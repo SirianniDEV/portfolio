@@ -58,7 +58,6 @@ export default function Home() {
               <Window txt1="I am a creative thinker and problem solver, dedicated to delivering high-quality results. With a background in digital marketing, I decided to expand my skill set by studying in BCIT's Digital Design and Web Development program to focus on graphic design and discovered a passion for web development. "
                       txt2="As I still love analyzing data for marketing and designing assets for projects, I currently am working towards a career in developing websites. My previous experiences have shaped me into a well-rounded asset to any team that can contribute in numerous ways in different areas. I am always looking for opportunities to learn and expand my skills."/>
                 <div className={styles.grid}>
-
                   <Bubble icon={<AiFillHtml5 />} width='70px' height='70px' iconSize='3rem' />
                   <Bubble icon={<BsFiletypeCs />}  width='70px' height='70px' iconSize='2.5rem'/>
                   <Bubble icon={<SiJavascript />}  width='70px' height='70px' iconSize='2.5rem' />

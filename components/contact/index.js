@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import AppButton from '../button';
+import Window from '../window';
 
 const WindowContainer = styled.div
 `
@@ -8,6 +9,10 @@ const WindowContainer = styled.div
     z-index: 5;
     position: relative;
     font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 `
 const Container = styled.div
@@ -116,11 +121,13 @@ export default function Contact(){
 
           return (
             <WindowContainer>
-            <Container>
-              <p>Thank you!</p>
-              <p>We&apos;ll be in touch soon.</p>
-              <AppButton txt='Go back home'/>
-            </Container>
+            <Window
+                txt1='Thank you! Your message has been sent. We&apos;ll be in touch soon.'
+                txt2=''/>
+
+                <AppButton txt='Back' handleClick={() => setSubmitted(false)} />
+                <AppButton txt='Home' handleClick={() => window.location.href = '/'} />    
+                         
             </WindowContainer>
           );
         };
@@ -165,7 +172,7 @@ export default function Contact(){
 
                 <Message type='text' placeholder='Briefly explain your project...'/>
 
-                <AppButton type="submit" txt='Send' />
+                <AppButton type="submit" txt='Send' handleClick={handleSubmit}  />
         
             </Form>
         </Container>
