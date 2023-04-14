@@ -39,11 +39,11 @@ export default function Navigation () {
         <Container>
 
             <Nav>
-                <a href="#">HOME</a>
+                <a href="/">HOME</a>
 
-                <a href="#">PROJECTS</a>
+                <a href="/projects">PROJECTS</a>
 
-                <a href="#">CONTACT</a>
+                <a href="/contact">CONTACT</a>
             </Nav>
      
 
