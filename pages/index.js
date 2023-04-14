@@ -31,7 +31,7 @@ export default function Home() {
 
           <div className={styles.heroHeader}>
              <Navigation/>
-            <img className={styles.heroImg} src='/portrait-blue.png' width={800}/>
+            <Image className={styles.heroImg} src='/portrait-blue.png' width={800}/>
             {/* <div className={styles.portrait}>
                 <div className={styles.portraitText}>
                 <p>Digital Designer + Developer</p>
