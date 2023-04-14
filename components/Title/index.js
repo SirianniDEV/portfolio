@@ -1,14 +1,22 @@
 import styled from 'styled-components';
 
-const Title = styled.h1
+const Text = styled.h1
 `
-    color: #fff;
+    color: #8FB6FF;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    max-width: 900px;
 `
 
-export default function Title(){
+export default function Title({
+    txt="Hello World!"
+}){
     return(
-        <Title>
-            Hello World
-        </Title>
+        <Text>
+            {txt}
+        </Text>
     );
 }

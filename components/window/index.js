@@ -41,8 +41,15 @@ const Container = styled.div
 `
     background-color: #f5f5f5;
     min-width: 300px;
-    height: 300px;
+    max-width: 500px;
+    height: 100%;
     border: 4px solid #8FB6FF;
+`
+const Text = styled.p
+`
+    padding: 10px;
+    font-size: 0.9rem;
+    font-family: Montserrat;
 `
 const Shadow = styled.div
 `
@@ -56,7 +63,11 @@ const Shadow = styled.div
     z-index: -1;
 `
 
-export default function Window(){
+export default function Window({
+    txt1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia.",
+    txt2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia."
+}){
+
 
     const iconStyle = { 
         color: "#E1F5FF", 
@@ -71,6 +82,8 @@ export default function Window(){
                 <Circle2></Circle2>
                 <Circle2></Circle2>
             </Bar>
+            <Text>{txt1}</Text>
+            <Text>{txt2}</Text>
             </Container>
             <Shadow></Shadow>
         </WindowContainer>
