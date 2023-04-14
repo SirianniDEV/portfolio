@@ -36,22 +36,29 @@ const Socials = styled.div
 
 `;
 
+const A = styled(Link)
+`
+    &:hover {
+        color: #F6DDAD;
+    }
+`
+
 export default function Navigation () {
     return (
         <Container>
 
             <Nav>
-                <Link href="/">HOME</Link>
+                <A href="/">HOME</A>
 
-                <Link href="/projects">PROJECTS</Link>
+                <A href="/projects">PROJECTS</A>
 
-                <Link href="/contact">CONTACT</Link>
+                <A href="/contact">CONTACT</A>
             </Nav>
      
 
             <Socials>
-            <Link href="https://www.linkedin.com/in/sofia-sirianni-77229b18b/"  target='_blank'><BsGithub/></Link>
-            <Link href="https://github.com/SirianniDEV" target='_blank'><BsLinkedin/></Link>
+            <A href="https://www.linkedin.com/in/sofia-sirianni-77229b18b/"  target='_blank'><BsGithub/></A>
+            <A href="https://github.com/SirianniDEV" target='_blank'><BsLinkedin/></A>
             </Socials>
 
         

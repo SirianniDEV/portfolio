@@ -32,12 +32,13 @@ export default function Home() {
 
           <div className={styles.heroHeader}>
              <Navigation/>
-            <Title txt="Projects I Have Worked On"/>
+            <Title txt="PROJECTS"/>
         </div>
       <main className={styles.main}>
 
           <Project txt='Weather App' src='/project-photos/wa-1.png' href='/projects/weather-app'/>
-          <Project txt='Weather App' src='/project-photos/sh-1.png' href='/projects/safe-house'/>
+          <Project txt='Safe House' src='/project-photos/sh-1.png' href='/projects/safe-house'/>
+          <Project txt='Safe House' src='/project-photos/sh-1.png' href='/projects/safe-house'/>
 
        
      
