@@ -35,9 +35,8 @@ export default function Home() {
         <Window
         txt1='In a recent project I have developed a small weather app using the NextJS framework and MaterialUI for styling along with Framer Motion to create a dynamic application that calls data from OpenWeatherAPI using Axios.'
         txt2='The app allows users to find the weather of any location by entering a city&apos;s name in the input field. It provides the temperature, a weather description and wind gust. Weather App works on any device on the browser of your choice. '/>
-        <Link href='https://weather-app-flax-zeta.vercel.app/' target='_blank'>
-        <AppButton txt='Check it Out'/>
-        </Link>
+        <AppButton txt='Check it Out'  handleClick={() => window.location.href = 'https://weather-app-flax-zeta.vercel.app/'}/>
+
         </div>
         </div>
       
