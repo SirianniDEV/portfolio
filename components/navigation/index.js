@@ -57,8 +57,8 @@ export default function Navigation () {
      
 
             <Socials>
-            <A href="https://www.linkedin.com/in/sofia-sirianni-77229b18b/"  target='_blank'><BsGithub/></A>
-            <A href="https://github.com/SirianniDEV" target='_blank'><BsLinkedin/></A>
+            <A href="https://github.com/SirianniDEV"  target='_blank'><BsGithub/></A>
+            <A href="https://www.linkedin.com/in/sofia-sirianni-77229b18b/" target='_blank'><BsLinkedin/></A>
             </Socials>
 
         
