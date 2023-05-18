@@ -21,11 +21,11 @@ import Title from '../components/Title';
 
 export default function Home() {
   return (
-    <div classNameName={styles.container}>
+    <div className={styles.container}>
       <Head>
         <title>Sofia Siriani - Portfolio</title>
         <meta content="Sofia Siriani - Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/S-favicon.png" />
       </Head>
       <div className={styles.heroHeader}>
         <Navigation/>

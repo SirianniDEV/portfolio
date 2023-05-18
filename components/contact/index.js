@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import AppButton from '../button';
 import Window from '../window';
+import emailjs from '@emailjs/browser';
 
 const WindowContainer = styled.div
 `
@@ -41,7 +42,7 @@ const Circle1 = styled.span
     border: 3px solid #8FB6FF;
     border-radius: 50%;
 `
-const Form = styled.div
+const Form = styled.form
 `
     display:flex;
     justify-content: center;
@@ -89,6 +90,7 @@ const Input = styled.input
 `
 const RadioInput = styled.input
 `
+    cursor: none;
 `
 const Divider = styled.hr
 `
@@ -110,13 +112,31 @@ const Shadow = styled.div
 export default function Contact(){
 
         const [submitted, setSubmitted] = useState(false);
-        const handleSubmit = (event) => {
-         event.preventDefault();
-          setTimeout(() => {
-            setSubmitted(true);
-          }, 100);
-        };
-      
+        // const handleSubmit = (event) => {
+        //  event.preventDefault();
+        //   setTimeout(() => {
+        //     setSubmitted(true);
+        //   }, 100);
+        // };
+
+        const sendEmail = (e) => {
+            e.preventDefault();
+            emailjs.sendForm('service_3znbj96', 'template_iya01mk', e.target, '7sQiPRTWhthUOc4yz')
+            setTimeout(() => {
+              setSubmitted(true);
+            }, 100);
+        }
+
+        const [selectedOption, setSelectedOption] = useState(null);
+          
+        const handleButtonClick = (option) => {
+            if (selectedOption === option) {
+                setSelectedOption(null);
+            } else {
+                setSelectedOption(option);
+              }
+            }
+    
         if (submitted) {
 
           return (
@@ -149,30 +169,33 @@ export default function Contact(){
             </Info>
             
             <Form   
-                onSubmit={handleSubmit}
-                method="POST"
+                onSubmit={sendEmail}
+                // method="POST"
                 >
 
-            <Input type='text' placeholder='Name' name='FirstName'></Input>
-            <Input  type='text'placeholder='Email' name='Email' ></Input>
+            <Input type='text' placeholder='Name' name='name_from'></Input>
+            <Input  type='text'placeholder='Email' name='email_from' ></Input>
 
             <div>
              <p> I am looking for:</p>
-                <RadioInput type="radio" id="graphic design" name="services" value="graphic design"></RadioInput>
+                <RadioInput type="radio" id="graphic design" name="services_design" value="graphic design" 
+                checked={selectedOption === 'graphic deisgn'}   onClick={() => handleButtonClick('graphic deisgn')}></RadioInput>
                 <label>Graphic Design </label>
             </div>
             <div>
-                <RadioInput type="radio" id="web services" name="services" value="web services"></RadioInput>
+                <RadioInput type="radio" id="web services" name="services_website" value="web services"
+                checked={selectedOption === 'web services'}   onClick={() => handleButtonClick('web services')}></RadioInput>
                 <label>Website Services </label>
             </div>
             <div>
-                <RadioInput type="radio" id="social media" name="services" value="social media"></RadioInput>
-                <label>Social Media </label>
+                <RadioInput type="radio" id="digital marketing" name="services_marketing" value="digital marketing"
+                checked={selectedOption === 'digital marketing'}   onClick={() => handleButtonClick('digital marketing')}></RadioInput>
+                <label>Digital Marketing </label>
             </div>
 
-                <Message type='text' placeholder='Briefly explain your project...'/>
+                <Message type='text' name="message" placeholder='Briefly explain what you are looking for...'/>
 
-                <AppButton type="submit" txt='Send' handleClick={handleSubmit}  />
+                <AppButton type="submit" txt='Send' /*handleClick={handleSubmit}*/  />
         
             </Form>
         </Container>

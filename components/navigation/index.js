@@ -19,11 +19,13 @@ const Container = styled.nav
     font-weight: 600;
     font-size: 1.2rem;
     z-index: 100;
+    cursor: none;
 `
 const Nav = styled.div
 `
     gap: 50px;
     display: flex;
+  
 `
 const Socials = styled.div
 `
@@ -38,6 +40,7 @@ const Socials = styled.div
 
 const A = styled(Link)
 `
+cursor: none;
     &:hover {
         color: #F6DDAD;
     }

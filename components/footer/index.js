@@ -29,7 +29,7 @@ const IconLink = styled.a`
   font-size: 30px;
   color: #E1F5FF;
 
-
+  cursor: none;
   &:hover {
     color: #F6DDAD;
   }

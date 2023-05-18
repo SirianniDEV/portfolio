@@ -18,6 +18,7 @@ const BodyContainer = styled.div`
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 22px;
+  
 `;
 
 const Button = styled.button`
@@ -40,6 +41,7 @@ const Button = styled.button`
   border-radius: 3px;
   margin-bottom: 16px;
   transition: all 0.5s ease;
+  cursor: none;
   
   &:focus {
     padding: 0;
