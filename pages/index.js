@@ -88,6 +88,10 @@ export default function Home() {
               <AppButton txt='Check Out Projects'  handleClick={() => window.location.href = '/projects'}/>
             </div>
 
+            <div className={styles.CTA}>
+              <AppButton txt='Check Out Links'  handleClick={() => window.location.href = '/links'}/>
+            </div>
+
         </div>
         </main>
 
