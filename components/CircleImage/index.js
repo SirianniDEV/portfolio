@@ -11,6 +11,7 @@ const CircleImg = styled.img
     width: 250px;
     height: 250px;
     box-shadow: 5px 5px 0px 0px #8FB6FF;
+    margin: 25px;
 `
 
 export default function CircleImage({

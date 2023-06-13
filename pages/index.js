@@ -21,7 +21,7 @@ import Title from '../components/Title';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Sofia Siriani - Portfolio</title>
         <meta content="Sofia Siriani - Portfolio" />

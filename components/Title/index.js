@@ -10,6 +10,7 @@ const Text = styled.h1
     padding: 10px;
     max-width: 900px;
     margin: 0 auto;
+    line-height: 1;
 `
 
 export default function Title({
